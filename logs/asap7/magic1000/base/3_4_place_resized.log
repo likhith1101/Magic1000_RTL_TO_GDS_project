@@ -1,0 +1,68 @@
+OpenROAD 26Q2-1619-g9e1904a6f8 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 8 thread(s).
+source /opt/OpenROAD-flow-scripts/flow/platforms/asap7/liberty_suppressions.tcl
+read_liberty /opt/OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib.gz
+read_liberty /opt/OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_INVBUF_RVT_FF_nldm_220122.lib.gz
+read_liberty /opt/OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_OA_RVT_FF_nldm_211120.lib.gz
+read_liberty /opt/OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz
+read_liberty /opt/OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SEQ_RVT_FF_nldm_220123.lib
+read_db ./results/asap7/magic1000/base/3_3_place_gp.odb
+read_sdc ./results/asap7/magic1000/base/2_floorplan.sdc
+source /opt/OpenROAD-flow-scripts/flow/platforms/asap7/setRC.tcl
+estimate_parasitics -placement
+Perform buffer insertion and gate resizing...
+repair_design -verbose
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |       331
+       10 |     +0.0% |       0 |       0 |             0 |       321
+       20 |     +0.0% |       0 |       0 |             0 |       311
+       30 |     +0.0% |       0 |       0 |             0 |       301
+       40 |     +0.0% |       0 |       0 |             0 |       291
+       50 |     +0.0% |       0 |       0 |             0 |       281
+       60 |     +0.0% |       0 |       0 |             0 |       271
+       70 |     +0.0% |       0 |       0 |             0 |       261
+       80 |     +0.0% |       0 |       0 |             0 |       251
+       90 |     +0.0% |       0 |       0 |             0 |       241
+      100 |     +0.0% |       0 |       0 |             0 |       231
+      110 |     +0.0% |       0 |       0 |             0 |       221
+      120 |     +0.0% |       0 |       0 |             0 |       211
+      130 |     +0.0% |       0 |       0 |             0 |       201
+      140 |     +0.0% |       0 |       0 |             0 |       191
+      150 |     +0.0% |       0 |       0 |             0 |       181
+      160 |     +0.0% |       0 |       0 |             0 |       171
+      170 |     +0.0% |       0 |       0 |             0 |       161
+      180 |     +0.0% |       0 |       0 |             0 |       151
+      190 |     +0.0% |       0 |       0 |             0 |       141
+      200 |     +0.0% |       0 |       0 |             0 |       131
+      210 |     +0.0% |       0 |       0 |             0 |       121
+      220 |     +0.0% |       0 |       0 |             0 |       111
+      230 |     +0.0% |       0 |       0 |             0 |       101
+      240 |     +0.0% |       0 |       0 |             0 |        91
+      250 |     +0.0% |       0 |       0 |             0 |        81
+      260 |     +0.0% |       0 |       0 |             0 |        71
+      270 |     +0.0% |       0 |       0 |             0 |        61
+      280 |     +0.0% |       0 |       0 |             0 |        51
+      290 |     +0.0% |       0 |       0 |             0 |        41
+      300 |     +0.0% |       0 |       0 |             0 |        31
+      310 |     +0.0% |       0 |       0 |             0 |        21
+      320 |     +0.0% |       0 |       0 |             0 |        11
+      330 |     +0.0% |       0 |       0 |             0 |         1
+    final |     +0.0% |       0 |       0 |             0 |         0
+---------------------------------------------------------------------
+Floating nets: 
+Report metrics stage 3, resizer...
+
+==========================================================================
+resizer report_design_area
+--------------------------------------------------------------------------
+Design area 35 um^2 45% utilization.
+Instance count before 361, after 361
+Pin count before 956, after 956
+write_db ./results/asap7/magic1000/base/3_4_place_resized.odb
+Elapsed time: 0:02.68[h:]min:sec. CPU time: user 2.44 sys 0.36 (104%). Peak memory: 217988KB.
+Log                       Ext     Elapsed/s Peak Memory/MB sha1sum result [0:20)
+3_4_place_resized         .odb            2            212 3db979a8ef2fdd7a4aaf

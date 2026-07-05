@@ -1,0 +1,71 @@
+###############################################################################
+# Created by write_sdc
+###############################################################################
+current_design magic1000_core_orfs
+###############################################################################
+# Timing Constraints
+###############################################################################
+create_clock -name clk -period 475.1642 [get_ports {clk}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {data_in[0]}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {data_in[1]}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {data_in[2]}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {data_in[3]}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {halt_on_nop}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {instr_in[0]}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {instr_in[10]}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {instr_in[11]}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {instr_in[12]}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {instr_in[13]}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {instr_in[14]}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {instr_in[15]}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {instr_in[1]}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {instr_in[2]}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {instr_in[3]}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {instr_in[4]}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {instr_in[5]}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {instr_in[6]}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {instr_in[7]}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {instr_in[8]}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {instr_in[9]}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {rst}]
+set_input_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {run}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {data_addr[0]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {data_addr[1]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {data_addr[2]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {data_addr[3]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {halted}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {instr_addr[0]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {instr_addr[1]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {instr_addr[2]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {instr_addr[3]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {out_a[0]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {out_a[1]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {out_a[2]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {out_a[3]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {out_b[0]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {out_b[1]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {out_b[2]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {out_b[3]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {out_valid}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {reg0[0]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {reg0[1]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {reg0[2]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {reg0[3]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {reg1[0]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {reg1[1]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {reg1[2]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {reg1[3]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {reg2[0]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {reg2[1]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {reg2[2]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {reg2[3]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {reg3[0]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {reg3[1]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {reg3[2]}]
+set_output_delay 250.0000 -clock [get_clocks {clk}] -add_delay [get_ports {reg3[3]}]
+###############################################################################
+# Environment
+###############################################################################
+###############################################################################
+# Design Rules
+###############################################################################

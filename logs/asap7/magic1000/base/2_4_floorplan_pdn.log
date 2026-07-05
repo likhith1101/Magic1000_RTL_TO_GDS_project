@@ -1,0 +1,20 @@
+OpenROAD 26Q2-1619-g9e1904a6f8 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 8 thread(s).
+source /opt/OpenROAD-flow-scripts/flow/platforms/asap7/liberty_suppressions.tcl
+read_liberty /opt/OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib.gz
+read_liberty /opt/OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_INVBUF_RVT_FF_nldm_220122.lib.gz
+read_liberty /opt/OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_OA_RVT_FF_nldm_211120.lib.gz
+read_liberty /opt/OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz
+read_liberty /opt/OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SEQ_RVT_FF_nldm_220123.lib
+read_db ./results/asap7/magic1000/base/2_3_floorplan_tapcell.odb
+read_sdc ./results/asap7/magic1000/base/2_1_floorplan.sdc
+source /opt/OpenROAD-flow-scripts/flow/platforms/asap7/setRC.tcl
+[INFO PDN-0001] Inserting grid: top
+Design area 33 um^2 44% utilization.
+write_db ./results/asap7/magic1000/base/2_4_floorplan_pdn.odb
+Elapsed time: 0:02.45[h:]min:sec. CPU time: user 2.22 sys 0.23 (99%). Peak memory: 200520KB.
+Log                       Ext     Elapsed/s Peak Memory/MB sha1sum result [0:20)
+2_4_floorplan_pdn         .odb            2            195 f8e945ce5963624af2c2
