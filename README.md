@@ -449,7 +449,7 @@ docker pull openroad/flow-ubuntu22.04-builder
 ## Reference
 
 > MAGIC-1000: A 4-bit computer from MoS₂ transistors.  
-> *Nature Electronics* — [DOI link]
+> *Nature Electronics* — [(https://www.nature.com/articles/s41928-026-01641-0)]
 
 ---
 
