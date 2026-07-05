@@ -438,20 +438,6 @@ gtkwave sim/dump.vcd
 | [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts) | latest | Complete RTL-to-GDSII flow |
 | [KLayout](https://www.klayout.de/) | ≥ 0.27 | GDSII viewer and DRC |
 
-All tools except KLayout are bundled in the ORFS Docker image:
-
-```bash
-docker pull openroad/flow-ubuntu22.04-builder
-```
-
----
-
-## Reference
-
-> MAGIC-1000: A 4-bit computer from MoS₂ transistors.  
-> *Nature Electronics* — [(https://www.nature.com/articles/s41928-026-01641-0)]
-
----
 
 
 ## Layout Images
@@ -481,6 +467,23 @@ docker pull openroad/flow-ubuntu22.04-builder
 ### Worst Timing Path Highlight
 
 ![Worst Path](images/final_worst_path.webp)
+
+All tools except KLayout are bundled in the ORFS Docker image:
+
+```bash
+docker pull openroad/flow-ubuntu22.04-builder
+```
+
+---
+
+## Reference
+
+> MAGIC-1000: A 4-bit computer from MoS₂ transistors.  
+> *Nature Electronics* — [(https://www.nature.com/articles/s41928-026-01641-0)]
+
+---
+
+
 
 ## License
 
