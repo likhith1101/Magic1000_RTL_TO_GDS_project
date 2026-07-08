@@ -83,11 +83,7 @@ data_in[3:0] ──────►│          │  Register File │           
 
 ## Flow chart
 
-```
-
-![Worst Path](images/final_worst_path.webp)
-
-```
+![flow](images/mermaid-diagram.png)
 
 ### Instruction Format (16-bit)
 
