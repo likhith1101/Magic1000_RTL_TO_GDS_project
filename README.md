@@ -85,7 +85,7 @@ data_in[3:0] ──────►│          │  Register File │           
 
 ```
 
-![CTS](images/mermaid-diagram.png)
+![flow](images/mermaid-diagram.png)
 
 ```
 
