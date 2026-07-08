@@ -81,6 +81,14 @@ data_in[3:0] ──────►│          │  Register File │           
                     └─────────────────────────────────────────────┘
 ```
 
+## Flow chart
+
+```
+
+![CTS](images/mermaid-diagram.png)
+
+```
+
 ### Instruction Format (16-bit)
 
 ```
