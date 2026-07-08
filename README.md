@@ -85,7 +85,7 @@ data_in[3:0] ──────►│          │  Register File │           
 
 ```
 
-![flow](images/mermaid-diagram.png)
+![Worst Path](images/final_worst_path.webp)
 
 ```
 
